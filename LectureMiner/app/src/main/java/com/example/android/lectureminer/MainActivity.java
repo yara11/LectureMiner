@@ -105,9 +105,11 @@ public class MainActivity extends Activity implements ISpeechRecognitionServerEv
      */
     private Boolean getUseMicrophone() {
         int id = this._radioGroup.getCheckedRadioButtonId();
-        return id == R.id.micIntentRadioButton ||
+        return id == R.id.micDictationRadioButton;
+        /*return id == R.id.micIntentRadioButton ||
                 id == R.id.micDictationRadioButton ||
                 id == (R.id.micRadioButton - 1);
+                */
     }
 
     /**
@@ -115,9 +117,11 @@ public class MainActivity extends Activity implements ISpeechRecognitionServerEv
      * @return true if LUIS results are to be returned otherwise, false.
      */
     private Boolean getWantIntent() {
-        int id = this._radioGroup.getCheckedRadioButtonId();
+        return false;
+        /*int id = this._radioGroup.getCheckedRadioButtonId();
         return id == R.id.dataShortIntentRadioButton ||
                 id == R.id.micIntentRadioButton;
+         */
     }
 
     /**

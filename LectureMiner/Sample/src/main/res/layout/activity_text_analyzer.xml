@@ -23,12 +23,12 @@
             android:paddingRight="@dimen/activity_horizontal_margin"
             android:paddingTop="@dimen/activity_vertical_margin">
 
-            <TextView
+            <!--<TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/load_sample_text"
                 android:textColor="@color/colorPrimary"
-                android:textSize="16sp" />
+                android:textSize="16sp" />-->
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -36,6 +36,14 @@
                 android:orientation="horizontal">
 
                 <Button
+                    android:id="@+id/btn_positive_sample"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/space_medium"
+                    android:layout_weight="1"
+                    android:text="UPLOAD SAMPLE" />
+                <!--<Button
                     android:id="@+id/btn_positive_sample"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -51,7 +59,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="@dimen/space_medium"
                     android:layout_weight="1"
-                    android:text="@string/button_negative_sample" />
+                    android:text="@string/button_negative_sample" />-->
             </LinearLayout>
 
 
@@ -86,7 +94,7 @@
             </FrameLayout>
 
             <!-- Detected language -->
-            <TextView
+            <!--<TextView
                 android:id="@+id/detect_language"
                 style="@style/LabelText"
                 android:layout_width="wrap_content"
@@ -94,13 +102,13 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginTop="@dimen/space_medium"
                 android:text="@string/label_detected_language" />
-
             <TextView
                 android:id="@+id/detected_language"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/space_large"
                 tools:text="language is - " />
+            -->
 
             <!-- Key phrases -->
             <TextView
@@ -119,7 +127,7 @@
                 tools:text="Key phrases are - " />
 
             <!-- Sentiments -->
-            <TextView
+            <!--<TextView
                 android:id="@+id/get_sentiment_score"
                 style="@style/LabelText"
                 android:layout_width="wrap_content"
@@ -133,7 +141,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 tools:text="Sentiment score is - " />
-
+            -->
             <!-- Sentiments -->
             <Button
                 android:id="@+id/next"

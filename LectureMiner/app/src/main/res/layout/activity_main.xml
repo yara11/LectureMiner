@@ -41,7 +41,7 @@
         android:layout_height="fill_parent"
         android:layout_below="@+id/button1">
 
-        <RadioButton
+        <!--<RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Use Microphone with ShortPhrase mode"
@@ -49,11 +49,6 @@
             android:layout_above="@+id/micRadioButton"
             android:layout_alignRight="@+id/editText1" />
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Use Microphone with LongDictation mode"
-            android:id="@+id/micDictationRadioButton" />
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -70,14 +65,21 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Use wav file for LongDictation mode"
-            android:id="@+id/dataLongRadioButton" />
+            android:text="Use wav file and intent detection"
+            android:id="@+id/dataShortIntentRadioButton" />-->
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Use wav file and intent detection"
-            android:id="@+id/dataShortIntentRadioButton" />
+            android:text="Use Microphone"
+            android:id="@+id/micDictationRadioButton" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use wav file "
+            android:id="@+id/dataLongRadioButton" />
+
     </RadioGroup>
 
     <EditText

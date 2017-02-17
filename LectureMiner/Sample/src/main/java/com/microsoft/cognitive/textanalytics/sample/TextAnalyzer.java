@@ -120,14 +120,14 @@ public class TextAnalyzer extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_text_analyzer);
 
         Button buttonPositiveSample = (Button) findViewById(R.id.btn_positive_sample);
-        Button buttonNegativeSample = (Button) findViewById(R.id.btn_negative_sample);
+        //Button buttonNegativeSample = (Button) findViewById(R.id.btn_negative_sample);
 
         mTextInput = (TextInputEditText) findViewById(R.id.text_input);
         mClearButton = (ImageButton) findViewById(R.id.clear_all);
 
         mKeyPhrases = (TextView) findViewById(R.id.key_phrases);
-        mDetectedLanguage = (TextView) findViewById(R.id.detected_language);
-        mSentimentScore = (TextView) findViewById(R.id.sentiment_score);
+        //mDetectedLanguage = (TextView) findViewById(R.id.detected_language);
+        //mSentimentScore = (TextView) findViewById(R.id.sentiment_score);
 
         mTextInput.addTextChangedListener(new TextWatcher() {
             @Override
@@ -174,11 +174,11 @@ public class TextAnalyzer extends AppCompatActivity implements View.OnClickListe
 
         // Set OnClick listeners
         buttonPositiveSample.setOnClickListener(this);
-        buttonNegativeSample.setOnClickListener(this);
+        //buttonNegativeSample.setOnClickListener(this);
         mClearButton.setOnClickListener(this);
-        ((TextView) findViewById(R.id.detect_language)).setOnClickListener(this);
+        //((TextView) findViewById(R.id.detect_language)).setOnClickListener(this);
         ((TextView) findViewById(R.id.get_key_phrases)).setOnClickListener(this);
-        ((TextView) findViewById(R.id.get_sentiment_score)).setOnClickListener(this);
+        //((TextView) findViewById(R.id.get_sentiment_score)).setOnClickListener(this);
 
         //((Button) findViewById(R.id.goto_detected_topics)).setOnClickListener(this);
         bNext = (Button) findViewById(R.id.next);
